@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+header{
+    height: 70px;
+    background-color: aqua;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    padding: 30px;
+}
+
