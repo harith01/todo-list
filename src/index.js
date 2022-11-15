@@ -1,6 +1,7 @@
 import Icon from './img/task.svg';
 import './style/style.css';
 import displayForm from './form';
+import { hideForm } from './form';
 
 
 const myImage = new Image();
@@ -13,5 +14,8 @@ document.body.addEventListener('click', (e)=>{
     const { target } = e;
     if (target.id == 'addProject'){
         displayForm();
+    }
+    if (target.id == 'cancel'){
+        hideForm();
     }
 })
