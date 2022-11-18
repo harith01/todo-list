@@ -1,4 +1,4 @@
-function displayForm(){
+export default function displayForm(){
     const form = document.querySelector('#addProjectForm');
     const addProject = document.querySelector('#addProject');
     form.classList.remove('hide');
@@ -12,4 +12,11 @@ export function hideForm(){
     addProject.classList.remove('hide');
 }
 
-export default displayForm
+
+export let projects = [];
+
+
+export function addProjectItem(){
+    const projectName = document.getElementById('project-name').value;
+    projects.push(projectName);
+}

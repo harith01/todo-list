@@ -7,6 +7,27 @@
     <title>ToDo List App</title>
 <script defer src="main.js"></script></head>
 <body>
-    <h1>ToDo List</h1>
+    <header>
+        <h1 class="header-title">ToDo List</h1>
+    </header>
+    <main>
+        <div id="sidebar">
+            <h2>Projects</h2>
+            <button id="addProject" type="button">Add Project</button>
+            <form id="addProjectForm" class="hide">
+                <input type="text" id="project-name" name="project">
+                <div class="add-cancel">
+                    <button id="add" type="button">Add</button>
+                    <button id="cancel" type="button">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <div id="contents">
+
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2022</p>
+    </footer>
 </body>
 </html>
